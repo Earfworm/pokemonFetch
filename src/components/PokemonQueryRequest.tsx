@@ -9,7 +9,12 @@ useEffect(() => {
   getPokemonInfo().then((data) => console.log(data));
 }, []);
 const PokemonQueryRequest = () => {
-  return <div className="PokemonQueryRequest">PokemonQueryRequest works</div>;
+  return (
+    <form className="PokemonQueryRequest">
+      PokemonQueryRequest works
+      <input type="text" name="pokeSearch" id="pokeSearch" />
+    </form>
+  );
 };
 
 export default PokemonQueryRequest;
